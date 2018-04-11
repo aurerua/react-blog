@@ -7,6 +7,7 @@ const logo = require('./logo.svg');
 class App extends React.Component {
   
   render() {
+    const maxTodosDepth = 1;
     return (
     <div className="container">
       <div className="App">
@@ -14,7 +15,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo"/>
           <h1 className="App-title">React Todo Tool</h1>
         </header>
-        <TodoList/>
+        <TodoList maxDepth={maxTodosDepth}/>
       </div>
     </div>);
   }
